@@ -5,7 +5,8 @@ const User = require('../models/user.schema');
 const jwt = require('jsonwebtoken');
 const env = require('dotenv');
 env.config();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
+
 
 
 router.post('/register', async (req, res , next) => {
